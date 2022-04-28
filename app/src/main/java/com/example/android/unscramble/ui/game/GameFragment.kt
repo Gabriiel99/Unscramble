@@ -16,6 +16,7 @@
 
 package com.example.android.unscramble.ui.game
 
+
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -134,6 +135,7 @@ class GameFragment : Fragment() {
      * restart the game.
      */
     private fun restartGame() {
+        viewModel.reinitializeData()
         setErrorTextField(false)
         updateNextWordOnScreen()
     }
